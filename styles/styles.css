@@ -140,7 +140,7 @@ a {
   -moz-box-shadow: 19px 23px 39px -18px rgba(0, 0, 0, 0.92);
 }
 
-#about-container button {
+#contact {
   margin-top: 2rem;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -154,7 +154,7 @@ a {
   opacity: 0.8;
 }
 
-#about-container button:hover {
+#contact:hover {
   opacity: 1;
 }
 
@@ -237,11 +237,84 @@ a {
 
 #contact-container {
   background-color: #fefefe;
-  height: 500px;
 }
 
 #contact-container h1 {
   padding-top: 4rem;
   font-size: 25px;
   text-align: center;
+}
+
+#contact-inner {
+  display: flex;
+  width: 80%;
+  margin: 3rem auto;
+  gap: 10rem;
+  padding-bottom: 5rem;
+}
+
+#contact-inner span {
+  display: block;
+  border-top: 1px solid #aaa;
+  padding: 2rem 0;
+}
+
+.social-media {
+  padding-bottom: 3rem;
+}
+
+.social-media a {
+  color: #000;
+  padding-right: 2rem;
+}
+
+#about-contact {
+  width: 50%;
+}
+
+#about-contact p {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #aaa;
+}
+
+#about-contact h3 {
+  background: -webkit-linear-gradient(#005454, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2rem 0;
+  font-size: 25px;
+}
+
+#contact-form {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form input {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #888;
+}
+
+#contact-form textarea {
+  display: flex;
+  resize: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  width: 80%;
+  display: block;
+  margin: 2rem auto;
 }
