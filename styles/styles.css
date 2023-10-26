@@ -5,8 +5,7 @@
   font-family: Helvetica;
 }
 
-body,
-html {
+body {
   height: 100vh;
   background: radial-gradient(circle, #adfefe 0%, #005454 100%);
   scroll-behavior: smooth;
@@ -250,7 +249,7 @@ a {
   width: 80%;
   margin: 3rem auto;
   gap: 10rem;
-  padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 #contact-inner span {
@@ -317,4 +316,81 @@ a {
   width: 80%;
   display: block;
   margin: 2rem auto;
+}
+
+@media (max-width: 450px) {
+  main {
+    width: 100%;
+  }
+
+  #sidebar {
+    font-size: 10px;
+  }
+
+  #sidebar img {
+    height: 20px;
+  }
+
+  #header-main {
+    flex-direction: column;
+  }
+
+  #header-main img {
+    display: none;
+  }
+
+  #header-main span {
+    font-size: 20px;
+  }
+
+  .about-inner {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-info button {
+    width: 100%;
+  }
+
+  #tecnologies {
+    font-size: 10px;
+    width: 100%;
+  }
+
+  #tecnologies ul {
+    padding: 1rem 3rem;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  #tecnologies li {
+    flex-direction: column;
+  }
+
+  #contact-inner {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 2rem;
+    height: auto;
+  }
+
+  #about-contact {
+    width: 100%;
+    margin-top: -7rem;
+  }
+
+  .about-image img {
+    box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
+    webkit-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
+    moz-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #contact-form button {
+    font-size: 15px;
+    width: auto;
+  }
 }
