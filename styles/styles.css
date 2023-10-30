@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   height: 100vh;
   background: radial-gradient(circle, #adfefe 0%, #005454 100%);
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -139,6 +142,19 @@ a {
   -moz-box-shadow: 19px 23px 39px -18px rgba(0, 0, 0, 0.92);
 }
 
+.about-info p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+#about-contact p {
+  color: #aaa;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
 #contact {
   margin-top: 2rem;
   padding: 1rem 2.5rem;
@@ -232,6 +248,11 @@ a {
   box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
+}
+
+.project img {
+  height: 350px;
+  width: 350px;
 }
 
 #contact-container {
@@ -377,6 +398,7 @@ a {
   #about-contact {
     width: 100%;
     margin-top: -7rem;
+    padding: 0 1rem;
   }
 
   .about-image img {
