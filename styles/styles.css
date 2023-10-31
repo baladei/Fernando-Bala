@@ -244,15 +244,40 @@ a {
 .project {
   min-height: 350px;
   min-width: 350px;
-  background-color: #fefefe;
+  background-color: #014343;
   box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+.project h2 {
+  color: #fff;
+  padding: 1rem;
+}
+
+.project p {
+  color: #ddd;
+  padding: 0 1rem;
+}
+
+.project button {
+  color: #fff;
+  font-weight: bolder;
+  background: radial-gradient(circle, #00ffff 0%, #005454 100%);
+  padding: 0.5rem 2rem;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
 
 .project img {
-  height: 350px;
+  height: 250px;
   width: 350px;
+  object-fit: fill;
 }
 
 #contact-container {
@@ -367,10 +392,24 @@ a {
   .about-inner {
     flex-direction: column;
     width: 100%;
+    padding: 0 3rem;
   }
 
   .about-info button {
     width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .about-info p {
+    padding-bottom: 1rem;
+  }
+
+  .about-image img {
+    margin-top: 4rem;
+    margin-bottom: -3rem;
+    box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
+    webkit-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
+    moz-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
   }
 
   #tecnologies {
@@ -395,18 +434,6 @@ a {
     height: auto;
   }
 
-  #about-contact {
-    width: 100%;
-    margin-top: -7rem;
-    padding: 0 1rem;
-  }
-
-  .about-image img {
-    box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
-    webkit-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
-    moz-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
-  }
-
   #contact-form {
     width: 100%;
   }
@@ -414,5 +441,11 @@ a {
   #contact-form button {
     font-size: 15px;
     width: auto;
+  }
+
+  #about-contact {
+    width: 100%;
+    margin-top: -7rem;
+    padding: 0 1rem;
   }
 }
