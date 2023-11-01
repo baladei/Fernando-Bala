@@ -28,15 +28,24 @@ a {
 #sidebar {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  position: fixed;
+  top: 0;
   padding: 5px 1rem;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
   background-color: #005454;
   border: 1px solid #aaa;
   border-radius: 10px;
   color: #fff;
+  opacity: 0.8;
+  transition: 0.5s;
   font-weight: bold;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#sidebar:hover {
+  opacity: 1;
 }
 
 #sidebar img {
@@ -105,9 +114,19 @@ a {
   text-align: center;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #header-main .image-logo img {
-  height: 300px;
+  height: 360px;
   opacity: 0.5;
+  animation: spin 2s linear infinite;
 }
 
 #about-container {
@@ -244,7 +263,7 @@ a {
 .project {
   min-height: 350px;
   min-width: 350px;
-  background-color: #014343;
+  background-color: #002d2d;
   box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -webkit-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
   -moz-box-shadow: 19px 23px 39px 0px rgba(0, 0, 0, 0.92);
@@ -362,9 +381,10 @@ a {
 }
 
 #contact-form button {
-  width: 80%;
+  width: 40%;
   display: block;
   margin: 2rem auto;
+  color: #fff;
 }
 
 @media (max-width: 450px) {
@@ -411,6 +431,7 @@ a {
     margin-top: 4rem;
     margin-bottom: -3rem;
     width: 100%;
+    height: 100%;
     box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
     webkit-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
     moz-box-shadow: 0px 17px 26px -15px rgba(0, 0, 0, 1);
