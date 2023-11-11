@@ -126,7 +126,7 @@ a {
 #header-main .image-logo img {
   height: 360px;
   opacity: 0.5;
-  animation: spin 2s linear infinite;
+  animation: spin 7s linear infinite;
 }
 
 #about-container {
@@ -330,9 +330,28 @@ a {
   padding-bottom: 3rem;
 }
 
+.social-media i {
+  transition: 0.5s;
+}
+
 .social-media a {
   color: #000;
   padding-right: 2rem;
+}
+
+.social-media .git:hover {
+  color: #000;
+  text-shadow: none;
+}
+
+.social-media .linkedin:hover {
+  color: #0e76a8;
+  text-shadow: none;
+}
+
+.social-media .instagram:hover {
+  color: #bc2a8c;
+  text-shadow: none;
 }
 
 #about-contact {
@@ -368,6 +387,7 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid #888;
+  padding-left: 30px;
 }
 
 #contact-form textarea {
@@ -378,6 +398,7 @@ a {
   width: 100%;
   height: 100px;
   border-radius: 5px;
+  padding-left: 30px;
 }
 
 #contact-form button {
@@ -385,6 +406,35 @@ a {
   display: block;
   margin: 2rem auto;
   color: #fff;
+}
+
+.input-name,
+.input-email,
+.textarea {
+  position: relative;
+}
+
+.bi-envelope-at,
+.bi-person-circle {
+  position: absolute;
+  left: 10px;
+  top: 57%;
+  color: #005454;
+}
+
+.bi-chat-left {
+  position: absolute;
+  left: 10px;
+  top: 30%;
+  color: #005454;
+}
+
+.bi-arrow-up-circle {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #00ffff;
+  font-size: 40px;
 }
 
 @media (max-width: 450px) {
