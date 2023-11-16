@@ -24,10 +24,6 @@ function sendEmail() {
   const userEmail = emailInput.value;
   const userMessage = message.value;
 
-  console.log(userName);
-  console.log(userEmail);
-  console.log(userMessage);
-
   const templateParams = {
     to_name: userName,
     from_name: userEmail,
